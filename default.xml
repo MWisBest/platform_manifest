@@ -12,12 +12,16 @@
   <remote  name="cm"
            fetch="https://github.com/" />
 
+  <remote  name="mw"
+           fetch="https://github.com/" />
+
   <remote  name="omapzoom"
            fetch="git://git.omapzoom.org/"
            review="http://review.omapzoom.org/" />
 
   <default revision="refs/tags/android-4.4.2_r1"
            remote="aosp"
+           sync-c="true"
            sync-j="4" />
 
   <project path="build" name="AOKP/build" remote="aokp" revision="kitkat" groups="pdk">
@@ -538,5 +542,5 @@
 
   <!-- <project path="packages/wallpapers/SwagPapers" name="AOKP/packages_wallpapers_SwagPapers_v2" remote="aokp" revision="kitkat" /> -->
 
-  <project path="platform_manifest" name="AOKP/platform_manifest" remote="aokp" revision="kitkat" />
+  <project path="platform_manifest" name="MWisBest/platform_manifest" remote="mw" revision="kitkat" />
 </manifest>
